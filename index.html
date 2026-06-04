@@ -259,74 +259,6 @@
         </figure>
       </section>
 
-      <section id="results" class="section-full results" aria-labelledby="results-title">
-        <div class="section-heading">
-          <p class="section-kicker">Headline results</p>
-          <h2 id="results-title">Transferred directions reduce ASR across heterogeneous generators</h2>
-          <p>
-            Text-to-image results use I2P prompts for safety and LAION-safe prompts for utility.
-            Values below are measured at fixed steering strengths from the main table.
-          </p>
-        </div>
-
-        <div class="metric-grid" aria-label="Text-to-image ASR summary">
-          <article class="metric-card">
-            <span>Flux1-Schnell</span>
-            <strong>0.307 -> 0.033</strong>
-            <p>alpha=5 - Mistral-7B / SVD</p>
-          </article>
-          <article class="metric-card">
-            <span>Flux1-Dev</span>
-            <strong>0.286 -> 0.035</strong>
-            <p>alpha=5 - Llama3.1-8B / SVD</p>
-          </article>
-          <article class="metric-card">
-            <span>Qwen-Image</span>
-            <strong>0.384 -> 0.087</strong>
-            <p>alpha=5 - Llama3.1-8B / SVD</p>
-          </article>
-          <article class="metric-card">
-            <span>Z-Image-Turbo</span>
-            <strong>0.304 -> 0.002</strong>
-            <p>alpha=3 - Llama3.1-8B / SVD</p>
-          </article>
-        </div>
-
-        <figure class="figure-frame results-figure">
-          <img
-            src="assets/t2i_main.png"
-            alt="Text-to-image safety utility trade-off plot"
-            width="11249"
-            height="7207"
-            decoding="async"
-          />
-          <figcaption>
-            Text-to-image safety-utility trade-off across target generators, source LLMs, and
-            representation-space alignment methods. Bars report ASR; lines report CLIP similarity.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="section-full video" aria-labelledby="video-title">
-        <div class="section-heading">
-          <p class="section-kicker">Text-to-video</p>
-          <h2 id="video-title">The same transferred direction principle extends to Wan2.2</h2>
-          <p>
-            On T2VSafetyBench, increasing the steering strength reduces unsafe generations while
-            CLIP similarity remains comparatively stable over sampled frames.
-          </p>
-        </div>
-        <figure class="figure-frame video-figure">
-          <img
-            src="assets/t2v_main.png"
-            alt="Text-to-video safety utility trade-off plot"
-            width="8930"
-            height="3175"
-            decoding="async"
-          />
-        </figure>
-      </section>
-
       <section id="examples" class="section-full examples" aria-labelledby="examples-title">
         <div class="section-heading">
           <p class="section-kicker">Qualitative examples</p>
@@ -420,6 +352,74 @@
             </div>
           </div>
         </details>
+      </section>
+
+      <section id="results" class="section-full results" aria-labelledby="results-title">
+        <div class="section-heading">
+          <p class="section-kicker">Headline results</p>
+          <h2 id="results-title">Transferred directions reduce ASR across heterogeneous generators</h2>
+          <p>
+            Text-to-image results use I2P prompts for safety and LAION-safe prompts for utility.
+            Values below are measured at fixed steering strengths from the main table.
+          </p>
+        </div>
+
+        <div class="metric-grid" aria-label="Text-to-image ASR summary">
+          <article class="metric-card">
+            <span>Flux1-Schnell</span>
+            <strong>0.307 -> 0.033</strong>
+            <p>alpha=5 - Mistral-7B / SVD</p>
+          </article>
+          <article class="metric-card">
+            <span>Flux1-Dev</span>
+            <strong>0.286 -> 0.035</strong>
+            <p>alpha=5 - Llama3.1-8B / SVD</p>
+          </article>
+          <article class="metric-card">
+            <span>Qwen-Image</span>
+            <strong>0.384 -> 0.087</strong>
+            <p>alpha=5 - Llama3.1-8B / SVD</p>
+          </article>
+          <article class="metric-card">
+            <span>Z-Image-Turbo</span>
+            <strong>0.304 -> 0.002</strong>
+            <p>alpha=3 - Llama3.1-8B / SVD</p>
+          </article>
+        </div>
+
+        <figure class="figure-frame results-figure">
+          <img
+            src="assets/t2i_main.png"
+            alt="Text-to-image safety utility trade-off plot"
+            width="11249"
+            height="7207"
+            decoding="async"
+          />
+          <figcaption>
+            Text-to-image safety-utility trade-off across target generators, source LLMs, and
+            representation-space alignment methods. Bars report ASR; lines report CLIP similarity.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section-full video" aria-labelledby="video-title">
+        <div class="section-heading">
+          <p class="section-kicker">Text-to-video</p>
+          <h2 id="video-title">The same transferred direction principle extends to Wan2.2</h2>
+          <p>
+            On T2VSafetyBench, increasing the steering strength reduces unsafe generations while
+            CLIP similarity remains comparatively stable over sampled frames.
+          </p>
+        </div>
+        <figure class="figure-frame video-figure">
+          <img
+            src="assets/t2v_main.png"
+            alt="Text-to-video safety utility trade-off plot"
+            width="8930"
+            height="3175"
+            decoding="async"
+          />
+        </figure>
       </section>
 
       <section class="section-grid takeaways" aria-labelledby="takeaways-title">
