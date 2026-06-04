@@ -48,7 +48,6 @@
             </p>
             <div class="hero-actions" aria-label="Primary links">
               <a class="button primary" href="https://arxiv.org/abs/xxxx.xxxxx">Paper PDF</a>
-              <a class="button ghost" href="#teleport">See the map</a>
               <a class="button text-link" href="#citation">BibTeX</a>
             </div>
           </div>
@@ -60,8 +59,8 @@
                 <h2>Same vector, new space.</h2>
               </div>
               <div class="lab-status">
-                <span id="lab-route">Llama3.1-8B -> Flux1-Schnell</span>
-                <strong id="lab-payoff">ASR 0.307 -> 0.033</strong>
+                <span id="lab-route">Llama3.1-8B → Flux1-Schnell</span>
+                <strong id="lab-payoff">ASR 0.307 → 0.033</strong>
               </div>
             </div>
 
@@ -367,22 +366,22 @@
         <div class="metric-grid" aria-label="Text-to-image ASR summary">
           <article class="metric-card">
             <span>Flux1-Schnell</span>
-            <strong>0.307 -> 0.033</strong>
+            <strong>0.307 → 0.033</strong>
             <p>alpha=5 - Mistral-7B / SVD</p>
           </article>
           <article class="metric-card">
             <span>Flux1-Dev</span>
-            <strong>0.286 -> 0.035</strong>
+            <strong>0.286 → 0.035</strong>
             <p>alpha=5 - Llama3.1-8B / SVD</p>
           </article>
           <article class="metric-card">
             <span>Qwen-Image</span>
-            <strong>0.384 -> 0.087</strong>
+            <strong>0.384 → 0.087</strong>
             <p>alpha=5 - Llama3.1-8B / SVD</p>
           </article>
           <article class="metric-card">
             <span>Z-Image-Turbo</span>
-            <strong>0.304 -> 0.002</strong>
+            <strong>0.304 → 0.002</strong>
             <p>alpha=3 - Llama3.1-8B / SVD</p>
           </article>
         </div>
@@ -438,7 +437,7 @@
         <p class="section-kicker">Citation</p>
         <h2 id="citation-title">BibTeX</h2>
         <pre><code>@article{poppi2026modelsafetyrepresentations,
-  title   = {Do Models Share Safety Representations? Cross-Model Steering for Safe Visual Generation},
+  title   = {{Do Models Share Safety Representations? Cross-Model Steering for Safe Visual Generation}},
   author  = {Poppi, Tobia and Cappelletti, Silvia and Sarto, Sara and Schiffers, Florian and Kessler, Garin and Cornia, Marcella and Baraldi, Lorenzo and Cucchiara, Rita},
   journal = {arXiv preprint arXiv:xxxx.xxxxx},
   year    = {2026}
@@ -500,7 +499,7 @@
           label: "Flux1-Schnell",
           subtitle: "T5-XXL text encoder",
           vector: [794, 170, 928, 250],
-          payoff: "ASR 0.307 -> 0.033",
+          payoff: "ASR 0.307 → 0.033",
           caption: "effective after transfer",
           points: [
             ["unsafe-dot", 792, 166],
@@ -516,7 +515,7 @@
           label: "Qwen-Image",
           subtitle: "Qwen2.5-VL text encoder",
           vector: [784, 194, 944, 248],
-          payoff: "ASR 0.384 -> 0.087",
+          payoff: "ASR 0.384 → 0.087",
           caption: "same source direction, different encoder",
           points: [
             ["unsafe-dot", 776, 198],
@@ -611,7 +610,7 @@
       function updateRoute() {
         const source = sourceData[activeSource];
         const target = targetData[activeTarget];
-        labRoute.textContent = `${source.label} -> ${target.label}`;
+        labRoute.textContent = `${source.label} → ${target.label}`;
         labPayoff.textContent = target.payoff;
       }
 
