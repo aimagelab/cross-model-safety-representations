@@ -4,7 +4,8 @@
 
 ### Evidence for Shared Safety Geometry Across Visual Generators
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-8A2BE2?style=for-the-badge)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Project Page](https://img.shields.io/badge/Project-Page-2E7DFF?style=for-the-badge)](https://aimagelab.github.io/cross-model-safety-representations/)
+[![Paper](https://img.shields.io/badge/Paper-PDF-8A2BE2?style=for-the-badge)](https://arxiv.org/abs/2606.05290)
 [![Task](https://img.shields.io/badge/Task-Shared%20Safety%20Representations-BB3E03?style=for-the-badge)](#what-this-paper-does)
 
 **We show that safety-relevant directions can be transferred across representation spaces, enabling a vector learned in a source LLM to steer heterogeneous text-to-image and text-to-video generators after a benign-only representation-space alignment.**
@@ -107,9 +108,9 @@ If this work is useful for your research, please cite:
 
 ```bibtex
 @article{poppi2026modelsafetyrepresentations,
-  title   = {Do Models Share Safety Representations? Cross-Model Steering for Safe Visual Generation},
-  author  = {Poppi, Tobia and Cappelletti, Silvia and Sarto, Sara and Schiffers, Florian and Kessler, Garin and Cornia, Marcella and Baraldi, Lorenzo},
-  journal = {arXiv preprint arXiv:xxxx.xxxxx},
+  title   = {{Do Models Share Safety Representations? Cross-Model Steering for Safe Visual Generation}},
+  author  = {Poppi, Tobia and Cappelletti, Silvia and Sarto, Sara and Schiffers, Florian and Kessler, Garin and Cornia, Marcella and Baraldi, Lorenzo and Cucchiara, Rita},
+  journal = {arXiv preprint arXiv:2606.05290},
   year    = {2026}
 }
 ```
